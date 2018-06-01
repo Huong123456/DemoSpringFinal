@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Boot Shoppy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Elite Shoppy Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design"/>
+    <script type="application/x-javascript"> addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    } </script>
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/webjars/jquery-ui/1.9.2/css/smoothness/jquery-ui-1.9.2.custom.min.css} "/>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/font-awesome/4.7.0/css/font-awesome.min.css}"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800"
+          rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,900,900italic,700italic'
+          rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div th:replace="fragments/header :: header"></div>
+<!-- /banner_bottom-->
+<div class="page-head_agile_info_w3l">
+    <div class="container">
+        <h3>Men's <span>Wear  </span></h3>
+        <div class="services-breadcrumb">
+            <div class="agile_inner_breadcrumb">
+                <ul class="w3_short">
+                    <li><a href="/">Home</a><i>|</i></li>
+                    <li>Men's Wear</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- banner-bootom-w3-agileits -->
+<div class="banner-bootom-w3-agileits">
+    <div class="container">
+        <div th:replace="fragments/category :: category"></div>
+
+        <div class="col-md-8 products-right">
+            <h5>Thời trang<span>Nam</span></h5>
+
+            <div th:replace="fragments/sort :: sort"></div>
+
+            <div class="men-wear-top">
+                <div id="top" class="callbacks_container">
+                    <ul class="rslides" id="slider3">
+                        <li>
+                            <img class="img-responsive" src="images/banner2.jpg" alt=" "/>
+                        </li>
+                        <li>
+                            <img class="img-responsive" src="images/banner5.jpg" alt=" "/>
+                        </li>
+                        <li>
+                            <img class="img-responsive" src="images/banner2.jpg" alt=" "/>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+
+
+        <div class="single-pro">
+            <div class="col-md-12 men-wear-bottom">
+            <div class="col-sm-4 men-wear-left">
+                <img class="img-responsive" src="images/bb2.jpg" alt=" "/>
+            </div>
+            <div class="col-sm-8 men-wear-right">
+                <h4>Bộ sưu tập thời trang<span>Nam</span></h4>
+                <p><b>Boot Shoop</b> Là hệ thống bán lẻ các mặt hàng thời trang nam, hiện tại đang có các store bán lẻ trên toàn quốc.
+                    Với sứ mệnh mang đến cho khách hàng những sản phẩm chất lượng cao do chính Việt Nam sản xuất với phong
+                    cách thời trang trẻ trung cập nhật xu hướng của thế giới nhưng với giá thành vừa với túi tiền người Việt.</p>
+                <br/>
+                <p>Với rất nhiều mẫu mã, kiểu dáng, màu sắc, chủng loại sản phẩm... và cam kết với chất lượng cao nhất,
+                    giao hàng nhanh chóng và tiết kiệm cho quý khách, hy vọng <b>Boot Shoop</b> sẽ mang lại
+                    cho quý khách một nơi mua sắm an toàn, thỏa mái, chất lượng và đáng nhớ.</p>
+                <br/>
+                <p> Ngoài ra chúng tôi còn cung cấp cho khách hàng một dịch vụ bán hàng thân thiện và nhiệt thành.
+                    Hiện tại chúng tôi không ngừng tìm kiếm các thành viên có chung mục tiêu và tư tưởng để xây dựng  </p>
+            </div>
+            <div class="clearfix"></div>
+
+                <!--Phần chèn nội dung của trang-->
+
+            <div class="col-md-3 product-men">
+                <div class="men-pro-item simpleCart_shelfItem">
+                    <div class="men-thumb-item">
+                        <img src="images/m1.jpg" alt="" class="pro-image-front">
+                        <img src="images/m1.jpg" alt="" class="pro-image-back">
+                        <div class="men-cart-pro">
+                            <div class="inner-men-cart-pro">
+                                <a href="single" class="link-product-add-cart">Quick View</a>
+                            </div>
+                        </div>
+                        <span class="product-new-top">New</span>
+
+                    </div>
+                    <div class="item-info-product ">
+                        <h4><a href="single">Formal Blue Shirt</a></h4>
+                        <div class="info-product-price">
+                            <span class="item_price">$45.99</span>
+                            <del>$69.71</del>
+                        </div>
+                        <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
+                            <form action="#" method="post">
+                                <fieldset>
+                                    <input type="hidden" name="cmd" value="_cart"/>
+                                    <input type="hidden" name="add" value="1"/>
+                                    <input type="hidden" name="business" value=" "/>
+                                    <input type="hidden" name="item_name" value="Formal Blue Shirt"/>
+                                    <input type="hidden" name="amount" value="30.99"/>
+                                    <input type="hidden" name="discount_amount" value="1.00"/>
+                                    <input type="hidden" name="currency_code" value="USD"/>
+                                    <input type="hidden" name="return" value=" "/>
+                                    <input type="hidden" name="cancel_return" value=" "/>
+                                    <input type="submit" name="submit" value="Add to cart" class="button"/>
+                                </fieldset>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    </div>
+</div>
+<div th:replace="fragments/grids :: grids"></div>
+<div th:replace="fragments/footer :: footer"></div>
+<div th:replace="fragments/modal2 :: modal2"></div>
+
+</body>
+</html>
