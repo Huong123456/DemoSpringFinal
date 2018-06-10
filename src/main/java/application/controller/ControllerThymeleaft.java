@@ -49,9 +49,14 @@ public class ControllerThymeleaft {
         return "womens";
     }
 
-    @RequestMapping(value = "/page_admin")
-    public String plainPage() {
-        return "/page_admin";
+    @RequestMapping(value = "/manager_employee")
+    public String managerEmployee() {
+        return "/manager_employee";
+    }
+
+    @RequestMapping(value = "/login")
+    public String login() {
+        return "/login";
     }
 
 

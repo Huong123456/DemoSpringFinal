@@ -1,0 +1,73 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+<div th:fragment="sidebar_menu">
+    <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+        <div class="menu_section">
+            <h3>Quản lí</h3>
+            <ul class="nav side-menu">
+                <li><a href="/index"><i class="fa fa-home"></i>Trang chủ</a></li>
+                <li><a><i class="fa fa-table"></i>Quản lí nhân viên<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="/employee">Ca làm việc</a></li>
+                        <li><a href="/employee">Lương</a></li>
+                    </ul>
+                </li>
+                <li><a><i class="fa fa-bar-chart-o"></i>Quản lí khách hàng<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="chartjs.html">Chart JS</a></li>
+                        <li><a href="chartjs2.html">Chart JS2</a></li>
+
+                    </ul>
+                </li>
+                <li><a><i class="fa fa-clone"></i>Quản lí sản phẩm<span class="fa fa-chevron-down"></span></a>
+                <ul class="nav child_menu">
+                    <li><a href="#">Fixed Sidebar</a></li>
+                    <li><a href="#">Fixed Footer</a></li>
+                </ul>
+                <li><a><i class="fa fa-clone"></i>Hóa đơn<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="#">a</a></li>
+                        <li><a href="#">b</a></li>
+                    </ul>
+                <li><a><i class="fa fa-clone"></i>Báo cáo<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="fixed_sidebar.html">Doanh thu tháng</a></li>
+                        <li><a href="fixed_footer.html">Doanh thu quý</a></li>
+                    </ul>
+                </li>
+                <li><a><i class="fa fa-clone"></i>Thống kê<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="fixed_sidebar.html">Sản phẩm sắp hết hàng</a></li>
+                        <li><a href="fixed_footer.html">Sản phẩm bán chạy</a></li>
+                        <li><a href="fixed_sidebar.html">Lương nhân viên</a></li>
+                        <li><a href="fixed_footer.html">Doanh thu</a></li>
+                    </ul>
+                </li>
+            </li>
+            </ul>
+        </div>
+        <div class="menu_section">
+            <h3>Mở rộng </h3>
+            <ul class="nav side-menu">
+                <li><a><i class="fa fa-bug"></i>Tin tức<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="e_commerce.html">E-commerce</a></li>
+
+                    </ul>
+                </li>
+                <li><a><i class="fa fa-windows"></i>Tuyển dụng<span class="fa fa-chevron-down"></span></a>
+                    <ul class="nav child_menu">
+                        <li><a href="page_403.html">403 Error</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

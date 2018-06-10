@@ -6,29 +6,24 @@
 	<artifactId>demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-
 	<name>demo</name>
 	<description>Demo Spring Boot</description>
-
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.5.13.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
-
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
@@ -37,7 +32,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 		<!-- hot swapping, disable cache for template, enable live reload -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -59,8 +53,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-
 		<!-- https://mvnrepository.com/artifact/org.webjars/bootstrap -->
 		<dependency>
 			<groupId>org.webjars</groupId>
@@ -79,7 +71,6 @@
 			<artifactId>font-awesome</artifactId>
 			<version>4.7.0</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.webjars.bower/countUp.js -->
 		<dependency>
 			<groupId>org.webjars.bower</groupId>
@@ -127,14 +118,12 @@
 			<artifactId>fastclick</artifactId>
 			<version>1.0.6</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.webjars.npm/nprogress -->
 		<dependency>
 			<groupId>org.webjars.npm</groupId>
 			<artifactId>nprogress</artifactId>
 			<version>0.2.0</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.webjars/webjars-locator -->
 		<dependency>
 			<groupId>org.webjars</groupId>
@@ -159,7 +148,6 @@
 			<artifactId>flot</artifactId>
 			<version>0.8.3</version>
 		</dependency>
-
 		<!-- https://mvnrepository.com/artifact/org.webjars.bower/flot.curvedlines -->
 		<dependency>
 			<groupId>org.webjars.bower</groupId>
@@ -184,15 +172,16 @@
 			<artifactId>bootstrap-daterangepicker</artifactId>
 			<version>2.1.27</version>
 		</dependency>
-
-
-
-
-
-
-
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
@@ -202,9 +191,6 @@
 		</plugins>
 	</build>
 </project>
-
-
-
 
 
 

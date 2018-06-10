@@ -1,0 +1,102 @@
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+<div th:fragment="lib_about">
+    <a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover"
+                                                                             style="opacity: 1;"> </span></a>
+    <script type="text/javascript" th:src="@{/webjars/jquery/2.1.4/dist/jquery.min.js}"></script>
+
+    <script type="text/javascript" th:src="@{/js/responsiveslides.min.js}"></script>
+    <script>
+        $(function () {
+            $("#slider3").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        });
+    </script>
+    <script type="text/javascript" th:src="@{/webjars/modernizr/2.6.2/modernizr.min.js}"></script>
+
+    <script type="text/javascript" th:src="@{/webjars/countUp.js/1.0.2/countUp.min.js}"></script>
+    <script>
+        $('.counter').each(function () {
+            var $this = $(this),
+                countTo = $this.attr('data-count');
+
+            $({countNum: $this.text()}).animate({
+                    countNum: countTo
+                },
+
+                {
+
+                    duration: 8000,
+                    easing: 'linear',
+                    step: function () {
+                        $this.text(Math.floor(this.countNum));
+                    },
+                    complete: function () {
+                        $this.text(this.countNum);
+                    }
+
+                });
+        });
+    </script>
+    <script type="text/javascript" th:src="@{/js/minicart.min.js}"></script>
+    <script>
+        // Mini Cart
+        paypal.minicart.render({
+            action: '#'
+        });
+
+        if (~window.location.search.indexOf('reset=true')) {
+            paypal.minicart.reset();
+        }
+    </script>
+    <script type='text/javascript'>//<![CDATA[
+    $(window).load(function () {
+        $("#slider-range").slider({
+            range: true,
+            min: 0,
+            max: 9000,
+            values: [1000, 7000],
+            slide: function (event, ui) {
+                $("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+            }
+        });
+        $("#amount").val("$" + $("#slider-range").slider("values", 0) + " - $" + $("#slider-range").slider("values", 1));
+
+    });//]]>
+
+    </script>
+    <script type="text/javascript" th:src="@{/webjars/jquery-ui/1.9.2/js/jquery-ui-1.9.2.custom.min.js}"></script>
+    <script type="text/javascript" th:src="@{js/move-top.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/jquery-easing/1.3/jquery.easing.min.js}"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $().UItoTop({easingType: 'easeOutQuart'});
+
+        });
+    </script>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/3.3.4/js/bootstrap.min.js}"></script>
+</div>
+</body>
+</html>
